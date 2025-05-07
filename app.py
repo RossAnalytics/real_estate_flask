@@ -25,7 +25,7 @@ HEADERS = {
 def analyze_property():
     data = request.get_json()
     address = data.get("address")
-    zipcode = data.get("zip")
+    zipcode = data.get("zipCode")
 
     if not address or not zipcode:
         return jsonify({"error": "Address and zip are required"}), 400
