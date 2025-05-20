@@ -11,7 +11,9 @@ app = Flask(__name__)
 # ✅ API Keys
 ZILLOW_API_KEY = "7669d41fafmsh726958cb0735ff5p18abf3jsnc86cfe210aac"
 ZILLOW_API_HOST = "zillow-com1.p.rapidapi.com"
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
+
 
 
 HEADERS = {
